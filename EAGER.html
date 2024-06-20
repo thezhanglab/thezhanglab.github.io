@@ -1,0 +1,2048 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="EAGER_files/filelist.xml">
+<title>NSF/IIS MoveMine</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>University of Illinois</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Lanjing Zhang</o:LastAuthor>
+  <o:Revision>16</o:Revision>
+  <o:TotalTime>1216</o:TotalTime>
+  <o:Created>2024-06-20T00:54:00Z</o:Created>
+  <o:LastSaved>2024-06-20T01:54:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1542</o:Words>
+  <o:Characters>8794</o:Characters>
+  <o:Company>Dept. of Computer Science</o:Company>
+  <o:Lines>73</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10316</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="EAGER_files/themedata.thmx">
+<link rel=colorSchemeMapping href="EAGER_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="376">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:"Source Sans Pro";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1610613495 33554433 0 0 415 0;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Batang;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.msolistparagraph0, li.msolistparagraph0, div.msolistparagraph0
+	{mso-style-name:msolistparagraph;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.msolistparagraph0CxSpFirst, li.msolistparagraph0CxSpFirst, div.msolistparagraph0CxSpFirst
+	{mso-style-name:msolistparagraphCxSpFirst;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.msolistparagraph0CxSpMiddle, li.msolistparagraph0CxSpMiddle, div.msolistparagraph0CxSpMiddle
+	{mso-style-name:msolistparagraphCxSpMiddle;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.msolistparagraph0CxSpLast, li.msolistparagraph0CxSpLast, div.msolistparagraph0CxSpLast
+	{mso-style-name:msolistparagraphCxSpLast;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.authors, li.authors, div.authors
+	{mso-style-name:authors;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.p1, li.p1, div.p1
+	{mso-style-name:p1;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.apple-style-span
+	{mso-style-name:apple-style-span;
+	mso-style-unhide:no;}
+span.addmd
+	{mso-style-name:addmd;
+	mso-style-unhide:no;}
+span.nobr
+	{mso-style-name:nobr;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:290938070;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1312777762 67698693 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:455878949;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1619807690 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1082918496;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1471506318 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1317875505;
+	mso-list-type:hybrid;
+	mso-list-template-ids:723816322 67698693 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1449928167;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2115970360 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:38.5pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:74.5pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:110.5pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:146.5pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:182.5pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:218.5pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:254.5pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:290.5pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:326.5pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:1693411414;
+	mso-list-template-ids:-798199742;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.25in;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:2084833540;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1219570136 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l6:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l6:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center'><span style='font-size:14.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Arial",sans-serif;color:black;
+background:white'>IIS-2128307 EAGER: Integration and analysis of
+high-dimensional dataset<o:p></o:p></span></h1>
+
+<h1 align=center style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;
+margin-left:0in;text-align:center'><span style='font-size:11.0pt;mso-bidi-font-size:
+10.5pt;font-family:"Arial",sans-serif;color:black;background:white'>National
+Science Foundation Award Number: NSF IIS-2128307 (October 1, 2021 - NCE
+September 30, 2024) <o:p></o:p></span></h1>
+
+<h1 align=center style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;
+margin-left:0in;text-align:center'><span style='font-size:12.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p>&nbsp;</o:p></span></h1>
+
+<p align=center style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;
+margin-left:0in;text-align:center'><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-top:.25pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'>Contact Information<o:p></o:p></span></h1>
+
+<h1 style='margin-top:.25pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'><o:p>&nbsp;</o:p></span></h1>
+
+<p class=MsoNormal style='margin-left:31.5pt;line-height:12.6pt'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+color:black'>Lanjing Zhang, MD<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;line-height:12.6pt'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+color:black'><a href="https://pharmacy.rutgers.edu/about/chemical-biology/"><span
+style='color:#0000EE'>Department of Chemical Biology</span></a><br>
+<a href="https://pharmacy.rutgers.edu/about/chemical-biology/"><span
+style='color:#0000EE'>Ernest Mario School of Pharmacy</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;line-height:12.6pt'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+color:black'>Rutgers University<br>
+Office Room #: 107, 164 Frelinghuysen Rd.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;line-height:12.6pt'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+color:black'>Piscataway, NJ 08854<br>
+E-mail:&nbsp;<span class=SpellE>Lanjing.Zhang</span>&nbsp;#at# rutgers.edu,
+URL: </span><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'><a
+href="https://thezhanglab.github.io/"><span style='color:#0000EE'>https://thezhanglab.github.io/</span></a></span><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+color:black'><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p style='margin:0in'><b><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>List of Contributors<o:p></o:p></span></b></p>
+
+<p style='margin-left:38.5pt;text-indent:-.25in;mso-list:l4 level1 lfo13'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'><a href="https://vivianli.org/#home">Wei Vivian Li,
+PhD</a>, co-Principal Investigator, School of Public Health, Rutgers University
+(now at UC Riverside)<o:p></o:p></span></p>
+
+<p style='margin-left:38.5pt;text-indent:-.25in;mso-list:l4 level1 lfo13'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Jinchuan Xing, PhD, co-Principal Investigator,
+School of Arts and Sciences, Rutgers University <o:p></o:p></span></p>
+
+<p style='margin-left:38.5pt;text-indent:-.25in;mso-list:l4 level1 lfo13'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Nan Gao, <span class=GramE>PhD,<span
+style='mso-spacerun:yes'>  </span>co</span>-Principal Investigator, School of
+Arts and Sciences, Rutgers University – Newark <o:p></o:p></span></p>
+
+<p style='margin-left:38.5pt;text-indent:-.25in;mso-list:l4 level1 lfo13'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Fei Deng, Postdoc research associate, School of
+Pharmacy, Rutgers University <o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:38.5pt;
+text-indent:-.25in;mso-list:l4 level1 lfo13'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Catherine Feng, Summer undergraduate student,
+Harvard College, Cambridge, MA (REU student)<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><a href="https://vivianli.org/#home">Wei Vivian Li, PhD</a>,
+co-Principal Investigator, School of Public Health, Rutgers University (now at
+UC Riverside)</span><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><a
+href="https://molbiosci.rutgers.edu/faculty-research/faculty/faculty-detail/90-w-x/208-jinchuang-xing">Jinchuan
+Xing, PhD</a>, co-Principal Investigator, School of Arts and Sciences, Rutgers
+University </span><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><a href="https://sites.rutgers.edu/gao-lab/about-us/">Nan Gao, PhD, </a><span
+style='mso-spacerun:yes'> </span>co-Principal Investigator, School of Arts and
+Sciences, Rutgers University – Newark </span><span style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'>Fei Deng, Postdoc research associate, School of Pharmacy, Rutgers
+University </span><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l3 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'>Catherine Feng, Summer undergraduate student, Harvard College,
+Cambridge, MA (REU student)</span><span style='font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<h2><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;font-style:
+normal;mso-bidi-font-style:italic'>Project Award Information<o:p></o:p></span></h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;margin-left:
+.5in;text-indent:-.25in;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;font-weight:
+normal;mso-bidi-font-weight:bold'>Award Number: </span><span style='font-size:
+12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;font-weight:normal;
+mso-bidi-font-weight:bold'>IIS-2128307 EAGER: <o:p></o:p></span></h1>
+
+<h1 style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;margin-left:
+.5in;text-indent:-.25in;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;font-weight:
+normal;mso-bidi-font-weight:bold'>Duration: </span><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;font-weight:normal;mso-bidi-font-weight:
+bold'>10/01/2021-9/30/2024 (no cost extension)<o:p></o:p></span></h1>
+
+<h1 style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;margin-left:
+.5in;text-indent:-.25in;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;font-weight:
+normal;mso-bidi-font-weight:bold'>Title: </span><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:black;background:white;font-weight:
+normal;mso-bidi-font-weight:bold'>NSF </span><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;font-weight:normal;mso-bidi-font-weight:
+bold'>Integration and analysis of high-dimensional dataset<o:p></o:p></span></h1>
+
+<h1 style='margin-top:1.5pt;margin-right:0in;margin-bottom:.75pt;margin-left:
+.5in;text-indent:-.25in;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;font-weight:
+normal;mso-bidi-font-weight:bold'>Keywords:<span style='mso-spacerun:yes'> 
+</span>Big data, normalization, genomics, external validation</span><span
+style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+font-weight:normal;mso-bidi-font-weight:bold'><o:p></o:p></span></h1>
+
+<p><b style='mso-bidi-font-weight:normal'><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Project Summary<o:p></o:p></span></b></p>
+
+<p><span style='font-family:"Calibri",sans-serif'>In recent years, massive and
+complex datasets such as data from, facial recognition systems, autonomous
+cars, medical imaging, single-cell biology, etc. are increasing dramatically.
+Machine learning as part of artificial intelligence has been used to combine
+and understand these massive and complex datasets. The current mainstream
+machine learning algorithms have performed well, they are primarily
+mathematics-based and abstracted from their sources. Thus, these algorithms do
+not consider nor incorporate the rich knowledge from which these datasets were
+produced. Thus, this project aims to examine whether and how domain knowledge
+influences the outcomes of machine learning algorithms on combining and
+analyzing massive and complex datasets. If successful, this project will
+develop and substantially validate a domain knowledge driven computing
+framework. This project will enable scientists and engineers in various fields
+to apply their domain knowledge to better combine and analyze massive and
+complex datasets. Additional insights will also be generated to understand and
+improve the machine learning algorithms themselves. Therefore, the findings of
+this project will promote the progress of sciences and can directly advance
+biomedical fields and human health.<o:p></o:p></span></p>
+
+<p><span style='font-family:"Calibri",sans-serif'>Technically, this project
+aims to address the knowledge gap in mathematics-driven integration and
+analysis of high-dimensional datasets. This mathematics-driven knowledge gap
+has limited the full and robust integration of large, high-dimensional
+datasets. Moreover, external validation is required for rigorous examination of
+tuned machine learning algorithms. However, a majority of the studies on
+high-dimensional biomedical datasets did not use validation, largely due to
+missing data. Therefore, this project will improve the integration and analysis
+of high-dimensional datasets using domain-knowledge based data-normalization,
+missing data imputation and dimensionality reduction. As a proof of principle,
+the project also aims to develop and validate an adaptive <span class=SpellE>multimetric</span>
+pipeline to integrate various types of <span class=SpellE>mutiomic</span> data
+using novel feature-selection and dimensionality reduction algorithms. The
+resulted pipeline and package will enable researchers to better understand and
+classify high-dimensional datasets in biomedical and other fields. The project
+will result in a paradigm shift because the domain-knowledge driven data
+normalization, data imputation and dimensionality reduction are radically
+different from the mainstream mathematics driven approaches. Finally, this
+project also aims to expose undergraduate and high-school students who are
+interested in Computer Science to experiences in machine learning and data
+science.</span><b><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'> <o:p></o:p></span></b></p>
+
+<p><b><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Publications
+and Products: </span></b><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Note:<span
+style='mso-spacerun:yes'>  </span>All full-text papers can be searched and
+downloaded in PDF, if legally available, at the PI’s <a
+href="https://www.researchgate.net/profile/Lanjing-Zhang">ResearchGate page</a>.<o:p></o:p></span></p>
+
+<p style='margin-top:.25pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in;text-align:justify'><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Calibri",sans-serif'>Journal articles <span
+style='mso-bidi-font-style:italic'><o:p></o:p></span></span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Ryu E, Xia
+HH, <span class=SpellE>GuoGL</span>, <b>Zhang L</b>.&nbsp;&quot;Multivariable-adjusted
+trends in mortality due to alcoholic liver disease among adults in the United
+States, from 1999-2017.&quot;&nbsp;<em><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>American
+journal of translational research</span></em>, 2022,&nbsp;14(2): 1092–1099 <a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8902556/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8902556/</a>
+<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Cui M, Cheng
+C, <b>Zhang L</b>&nbsp;&quot;High-throughput proteomics: a methodological
+mini-review&quot;&nbsp;<em><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Laboratory
+Investigation</span></em>, 2022, 102 (11), 1170-1181<span
+style='mso-spacerun:yes'>  </span><span style='mso-field-code:" HYPERLINK \\h "'><span
+class=MsoHyperlink><span style='color:#3C75CF'>https://doi.org/10.1038/s41374-022-00830-7</span></span></span>&nbsp;
+<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Zhang L</span></b><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>. &quot;The Challenges and Opportunities of
+Translational Pathology&quot;&nbsp;<em><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Journal of
+Clinical and Translational Pathology</span></em>, 2022, 2(2): 63–66<span
+style='mso-spacerun:yes'>   </span><a
+href="https://doi.org/10.14218%2Fjctp.2022.00001">https://doi.org/10.14218%2Fjctp.2022.00001</a><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><a name="x__Hlk113145912"><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:#201F1E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;padding:0in;
+background:white'>Shrestha D,&nbsp;Bag A, Wu R, Zhang Y, Tang X, Qi Q,&nbsp;<b>Xing
+J</b>, Cheng Y. Genomics and epigenetics guided identification of
+tissue-specific genomic safe harbors.&nbsp;&nbsp;</span></a><i><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;color:#201F1E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in;background:white'>Genome Biology
+</span></i><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;color:#201F1E;border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in;background:white'>2022, 23: 199<i>
+</i></span><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'><a
+href="https://doi.org/10.1186/s13059-022-02770-3" target="_blank"
+title="Link to document DOI"><span style='color:#1D61A2;background:white'>https://doi.org/10.1186/s13059-022-02770-3</span></a><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:#201F1E;
+background:white'>Cheng A, Hu G<span style='border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in'>,</span>&nbsp;<b>Li WV</b><span
+style='border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in'>.&nbsp;</span>Benchmarking cell-type clustering methods for<span
+style='border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in'>&nbsp;</span>spatially resolved transcriptomics data<span
+style='border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in'>. Brief <span class=SpellE>Bioinform</span> 2023, 24(1): </span></span><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Source Sans Pro";mso-hansi-theme-font:minor-latin;
+color:#2A2A2A'>bbac475</span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:#201F1E;
+border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;padding:0in;
+background:white'> </span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><a
+href="https://doi.org/10.1093/bib/bbac475"><span style='border:none windowtext 1.0pt;
+mso-border-alt:none windowtext 0in;padding:0in;background:white'>https://doi.org/10.1093/bib/bbac475</span></a><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Balasubramanian
+<span class=GramE>I,<span style='mso-spacerun:yes'>  </span>Bandyopadhyay</span>
+S, Flores J, <span class=SpellE>Smak</span> JB, Lin X, Liu H, Sun S, <span
+class=SpellE>Golovchenko</span> NB, Liu Y, Wang D, Patel R, Joseph II, <span
+class=SpellE>Suntornsaratoon</span> P, Vargas J, Green PHR, Bhagat Govind, <span
+class=SpellE>Lagana</span> SM, Ying W, Zhang Y, Wang Z, <b>Li WV</b>, Singh S, Zhou
+Z, <span class=SpellE>Kollias</span> G, Farr LA, <span class=SpellE>Moonah</span>
+SN, Yu S, Wei Z, Ferraris R, Bonder EM, <b>Zhang L</b>, <span class=SpellE>Kiela</span>
+PR, <span class=SpellE>Edelblum</span> KL, Liu TL, <b>Gao N</b>. Infection and
+inflammation stimulate expansion of a CD74+ Paneth cell subset to regulate
+disease progression. <i>EMBO J</i>. 2023 Nov 2;42(21<span class=GramE>):e</span>113975
+DOI: <a href="https://doi.org/10.15252/embj.2023113975">10.15252/embj.2023113975</a>
+PMID: 37718683<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Hu K, <b>Zhang
+L</b>. Challenges and Opportunities Associated with Lifting the Zero COVID-19
+Policy in China. <span class=SpellE><i>Explor</i></span><i> Res Hypothesis Med</i>.
+2024 Jan-Mar;9(1):71-75. <span class=SpellE>doi</span>: <a
+href="https://doi.org/10.14218/erhm.2023.00002">10.14218/erhm.2023.00002</a>. <span
+class=SpellE>Epub</span> 2023 Mar 8. PMID: 38572142; <span class=GramE>PMCID:PMC</span>10989839.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Deng F</span></b><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>, Zhao L, Yu N, Lin Y, <b>Zhang L</b>. Union <span
+class=GramE>With</span> Recursive Feature Elimination: A Feature Selection
+Framework to Improve the Classification Performance of Multicategory Causes of
+Death in Colorectal Cancer. Lab Invest. 2024 Mar;104(3):100320. <span
+class=SpellE>doi</span>: <a href="https://doi.org/10.1016/j.labinv.2023.100320">10.1016/j.labinv.2023.100320</a>.
+<span class=SpellE>Epub</span> 2023 Dec 28. PMID: 38158124.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l5 level1 lfo6;
+tab-stops:list 31.5pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Liang Y, Guo
+GL, <b>Zhang L</b>. Current and Emerging Molecular Markers of Liver Diseases: A
+Pathogenic Perspective. Gene Expression 2022; 21(1), 9–19. <span class=SpellE>doi</span>:
+<a href="https://doi.org/10.14218/GEJLR.2022.00010">10.14218/GEJLR.2022.00010</a><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l5 level1 lfo6;tab-stops:list 31.5pt;background:white'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:#333333;mso-color-alt:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>Cui M, <b>Deng
+F</b>, <span class=SpellE>Disis</span> ML, Cheng C, <b>Zhang L</b>. Advances in
+the Clinical Application of High-throughput Proteomics. <span class=SpellE><i>Explor</i></span><i>
+Res Hypothesis Med</i> (in press).</span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#333333'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0in'><b><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>Project Impact<o:p></o:p></span></b></p>
+
+<p style='margin:0in'><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo8;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><b><span
+style='mso-bidi-font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'>Education:</span></b><span style='mso-bidi-font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-bidi-font-family:Arial'> Parts of&nbsp;the project
+results are used in data science education among high school students. We
+hosted a series of lectures at the Montgomery High School, New Jersey.
+Catherine Feng also founded a data science club at that high school (url: <a
+href="https://montydsc.wordpress.com/">https://montydsc.wordpress.com/</a> ).
+We also involved several high school and undergraduate students in the project.
+They became very interested in machine learning and its application.&nbsp;Most
+of the software and coding developed in this project have been made publicly
+available (see below). All new progress will be added into the other research
+collections upon completion.<o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+text-align:justify;text-indent:-.25in;mso-list:l0 level1 lfo8;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><b><span
+style='mso-bidi-font-size:11.0pt;font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'>Collaborations:</span></b><span style='mso-bidi-font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'> For this project
+we have established collaborations with several schools of Rutgers University
+and Montgomery High School, New Jersey. Through such collaborations we expect
+to explore many real applications and produce bigger Research Impacts.<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-family:"Calibri",sans-serif;mso-bidi-font-family:
+Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Current and
+Future <span style='mso-bidi-font-weight:bold'>Activities</span></span></b><span
+style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-family:"Calibri",sans-serif;
+mso-bidi-font-family:Arial'>The following are some of the highlights of our
+ongoing work.<span style='mso-spacerun:yes'>  </span>Please refer to the section:
+Publications and Products section for related references.<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Study
+effective and scalable methods for embedding at mining heterogeneous
+information networks<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Study
+effective and scalable methods for embedding and text mining at construction of
+heterogeneous information networks from unstructured data<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo10'><![if !supportLists]><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-bidi-font-family:Arial'>Study
+effective and scalable methods for embedding and mining for construction of
+multidimensional text-cubes and cube networks to support new applications<b> </b><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Calibri",sans-serif;color:black'>Potential
+Related Projects<u1:p></u1:p></span></b><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l6 level1 lfo12;
+background:white'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black;
+font-weight:normal;font-style:normal;mso-bidi-font-style:italic'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:black;
+font-weight:normal;font-style:normal;mso-bidi-font-style:italic'><a
+href="https://thezhanglab.github.io/R37.html">R37CA277812:</a> SCH: Screening
+and confirmatory machine learning for explainable modeling of non-cancer deaths
+in cancer patients<o:p></o:p></span></h4>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p><b><span style='font-family:"Calibri",sans-serif;color:black'>Project Web
+site URL:</span></b><span style='font-family:"Calibri",sans-serif;color:black'>&nbsp;<span
+class=apple-converted-space>&nbsp;</span><a
+href="https://thezhanglab.github.io/EAGER.html">https://thezhanglab.github.io/EAGER.html</a></span><span
+style='color:black'><o:p></o:p></span></p>
+
+<p><b><span style='font-family:"Calibri",sans-serif;color:black'>Online
+software:</span></b><span style='font-family:"Calibri",sans-serif;color:black'>&nbsp;<span
+class=apple-converted-space>&nbsp;</span>Online software can be downloaded at<span
+class=apple-converted-space>&nbsp;<a
+href="https://github.com/FeiDeng-RUTGERS/URFE">https://github.com/FeiDeng-RUTGERS/URFE</a></span>.</span><span
+style='color:black'><o:p></o:p></span></p>
+
+<p><b><span style='font-family:"Calibri",sans-serif;color:black'>Online
+resources:<span class=apple-converted-space>&nbsp;</span>&nbsp;</span></b><span
+style='font-family:"Calibri",sans-serif;color:black'>Research publications related
+to this project can be downloaded at<span class=apple-converted-space>&nbsp;</span><a
+href="https://agora.cs.illinois.edu/display/cs591han/Research+Publications+-+Data+Mining+Research+Group+at+CS%2C+UIUC">Selected
+Publications</a>&nbsp;<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
