@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI/AN Cancer Mortality ORs — Interactive Forest Plot</title>
+<style>
+  body {font-family: Arial, sans-serif; margin:0; background:#fafafa;}
+  svg {background:white;}
+  .axis line, .axis path {stroke:#999;}
+  .axis text {fill:#333; font-size:11px;}
+  .point {cursor:pointer; transition:0.2s;}
+  .point:hover {stroke:#000; stroke-width:3;}
+  .label {font-size:12px; dominant-baseline:middle;}
+  .tooltip {
+    position:absolute; background:rgba(0,0,0,0.8); color:white;
+    padding:8px 12px; border-radius:4px; font-size:13px;
+    pointer-events:none; opacity:0; transition:opacity 0.2s;
+    max-width:320px; white-space:nowrap;
+  }
+  .panel-title {font-weight:bold; fill:#d32f2f;}
+</style>
+</head>
+<body>
+<svg width="960" height="640"></svg>
+<div class="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// === DATA (copy-paste from your Table 3) ===
+const data = [
+  // Breast
+  {cancer:"Breast", cause:"Index cancer",    or:2.30e94, ci:[5.89e64, 9.00e123], p:"<0.001"},
+  {cancer:"Breast", cause:"Non-index cancer",or:20.01,  ci:[5.98, 66.94],      p:"<0.001"},
+  {cancer:"Breast", cause:"CVD",             or:7.83,   ci:[1.81, 33.82],      p:"0.01"},
+  {cancer:"Breast", cause:"Diabetes",        or:1.09,   ci:[0.58, 2.03],       p:"0.79"},
+  {cancer:"Breast", cause:"Infection",       or:4101,   ci:[22.3, 7.54e5],     p:"<0.001"},
+  {cancer:"Breast", cause:"Others",          or:1004,   ci:[39.1, 2.58e4],     p:"<0.001"},
+  // Prostate
+  {cancer:"Prostate", cause:"Index cancer",    or:1.14e57, ci:[1.48e42, 8.72e71], p:"<0.001"},
+  {cancer:"Prostate", cause:"Non-index cancer",or:1.71,   ci:[1.12, 2.61],       p:"0.01"},
+  {cancer:"Prostate", cause:"CVD",             or:3.01,   ci:[1.88, 4.81],       p:"<0.001"},
+  {cancer:"Prostate", cause:"Diabetes",        or:5.42,   ci:[1.99, 14.77],      p:"0.001"},
+  // Lung
+  {cancer:"Lung", cause:"Index cancer",    or:1.90e137, ci:[1.00e104, 3.30e170], p:"<0.001"},
+  {cancer:"Lung", cause:"Non-index cancer",or:411,     ci:[34.3, 4937],        p:"<0.001"},
+  {cancer:"Lung", cause:"CVD",             or:4.47,    ci:[2.46, 8.13],        p:"<0.001"},
+  {cancer:"Lung", cause:"Alzheimer’s",     or:24.62,   ci:[1.92, 315],         p:"0.01"},
+  // Colorectal
+  {cancer:"Colorectal", cause:"Index cancer",    or:1.10e169, ci:[4.30e127, 2.70e210], p:"<0.001"},
+  {cancer:"Colorectal", cause:"Non-index cancer",or:549,     ci:[66.5, 4534],         p:"<0.001"},
+  {cancer:"Colorectal", cause:"CVD",             or:3.12,    ci:[1.62, 5.99],         p:"<0.001"},
+  {cancer:"Colorectal", cause:"Diabetes",        or:4.63,    ci:[1.42, 15.1],         p:"0.01"}
+];
+
+// === D3 magic ===
+const svg = d3.select("svg"),
+      margin = {top:40, right:120, bottom:50, left:140},
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom;
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+const cancers = [...new Set(data.map(d=>d.cancer))];
+const causes = [...new Set(data.map(d=>d.cause))];
+
+const yCancer = d3.scaleBand()
+    .domain(cancers)
+    .range([0, height])
+    .padding(0.3);
+
+const yCause = d3.scaleBand()
+    .domain(causes)
+    .range([0, yCancer.bandwidth()])
+    .padding(0.1);
+
+const x = d3.scaleLog()
+    .domain([0.1, 1e180])
+    .range([0, width]);
+
+// axes
+g.append("g")
+    .attr("class","x axis")
+    .attr("transform",`translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(5, ".1s"));
+
+g.append("g")
+    .attr("class","y axis")
+    .call(d3.axisLeft(yCancer));
+
+// reference line OR=1
+g.append("line")
+    .attr("x1", x(1)).attr("x2", x(1))
+    .attr("y1", 0).attr("y2", height)
+    .attr("stroke", "#c00").attr("stroke-dasharray","5,5");
+
+// titles
+g.append("text")
+    .attr("class","panel-title")
+    .attr("x", width/2).attr("y", -10)
+    .attr("text-anchor","middle")
+    .text("AI/AN vs NH-White Odds Ratios (Logistic Regression)");
+
+// plot
+const rows = g.selectAll(".cancer")
+    .data(cancers)
+    .enter().append("g")
+    .attr("class","cancer")
+    .attr("transform", d=>`translate(0,${yCancer(d)})`);
+
+rows.selectAll(".point")
+  .data(d => data.filter(r=>r.cancer===d))
+  .enter().append("g")
+  .attr("class","point")
+  .attr("transform", d=>`translate(0,${yCause(d.cause)+yCause.bandwidth()/2})`)
+  .call(drawPoint);
+
+function drawPoint(sel) {
+  sel.append("line") // CI
+      .attr("x1", d=>x(d.ci[0]))
+      .attr("x2", d=>x(d.ci[1]))
+      .attr("stroke", "#333")
+      .attr("stroke-width", 1.5);
+
+  sel.append("circle") // point estimate
+      .attr("cx", d=>x(d.or))
+      .attr("r", 5)
+      .attr("fill", "#d32f2f");
+
+  sel.append("text") // cause label
+      .attr("x", -10)
+      .attr("y", 4)
+      .attr("text-anchor","end")
+      .attr("class","label")
+      .text(d=>d.cause);
+}
+
+// tooltip
+const tip = d3.select(".tooltip");
+svg.on("mousemove", e => tip.style("left",(e.pageX+10)+"px").style("top",(e.pageY-20)+"px"));
+
+g.selectAll(".point")
+ .on("mouseover", (e,d) => {
+    tip.html(`
+      <b>${d.cancer} — ${d.cause}</b><br>
+      OR = ${d3.format(".2s")(d.or)}<br>
+      95% CI ${d3.format(".2s")(d.ci[0])} – ${d3.format(".2s")(d.ci[1])}<br>
+      p ${d.p}
+    `).style("opacity",1);
+ })
+ .on("mouseout", () => tip.style("opacity",0))
+ .on("click", (e,d) => {
+    const padding = 0.3;
+    const [lo,hi] = d.ci;
+    x.domain([lo/(10**padding), hi*(10**padding)]);
+    redraw();
+ });
+
+function redraw() {
+  g.select(".x.axis").call(d3.axisBottom(x).ticks(5, ".1s"));
+  g.selectAll(".point line")
+      .attr("x1", d=>x(d.ci[0]))
+      .attr("x2", d=>x(d.ci[1]));
+  g.selectAll(".point circle")
+      .attr("cx", d=>x(d.or));
+}
+</script>
+<p style="text-align:center; margin-top:10px; font-size:90%; color:#555;">
+  <b>How to use:</b> Hover any red diamond for details • Click to zoom to that CI • Double-click canvas to reset zoom
+</p>
+</body>
+</html>
